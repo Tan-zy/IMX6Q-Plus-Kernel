@@ -1,0 +1,680 @@
+core/rtw_mlme_ext.c:2342:			DBG_8192C( "[%s] WFD IE Found!!\n", __FUNCTION__ );
+core/rtw_mlme_ext.c:2347:				DBG_8192C( "[%s] Peer PORT NUM = %d\n", __FUNCTION__, pwdinfo->wfd_info->peer_rtsp_ctrlport );
+core/rtw_mlme_ext.c:9675:            DBG_8192C("%s, ack to\n", __func__);
+core/rtw_mlme_ext.c:10890:			DBG_8192C("%02d,", chplan_ap.Channel[i]);
+core/rtw_p2p.c:2436:		DBG_8192C( "[%s] P2P IE not Found!!\n", __FUNCTION__ );
+core/rtw_p2p.c:2441:		DBG_8192C( "[%s] P2P IE Found!!\n", __FUNCTION__ );
+core/rtw_p2p.c:2449:			DBG_8192C( "[%s] Got P2P Capability Attr!!\n", __FUNCTION__ );
+core/rtw_p2p.c:2460:			DBG_8192C( "[%s] Got P2P DEVICE INFO Attr!!\n", __FUNCTION__ );		
+core/rtw_p2p.c:3222:		DBG_8192C( "[%s] WFD IE Found!!\n", __FUNCTION__ );
+core/rtw_p2p.c:3227:			DBG_8192C( "[%s] Peer PORT NUM = %d\n", __FUNCTION__, pwdinfo->wfd_info->peer_rtsp_ctrlport );
+core/rtw_p2p.c:3497:					DBG_8192C( "[%s] P2P_STATE_IDLE, ext_listen_period = %d\n", __FUNCTION__, pwdinfo->ext_listen_period );
+core/rtw_p2p.c:3523:				DBG_8192C( "[%s] P2P_STATE_IDLE, ext_listen_interval = %d\n", __FUNCTION__, pwdinfo->ext_listen_interval );
+core/rtw_p2p.c:4864:		DBG_8192C( "[%s] p2p_state is %d, ignore!!\n", __FUNCTION__, rtw_p2p_state(pwdinfo) );
+core/rtw_p2p.c:5071:	//DBG_8192C( "[%s] listen_dwell time is %d00ms\n", __FUNCTION__, pwdinfo->listen_dwell );
+core/rtw_mp.c:731:	DBG_8192C("%s ,pmppriv->network_macaddr=%x %x %x %x %x %x \n",__func__,
+core/rtw_mp.c:821:			DBG_8192C("%s , pmppriv->network_macaddr =%x %x %x %x %x %x\n",__func__,
+core/rtw_mp.c:1560:	//DBG_8192C("%s()!!!!! 0x460 = 0x%x\n" ,__func__,PHY_QueryBBReg(padapter, 0x460, bMaskDWord));
+core/rtw_mp.c:1565:	DBG_8192C("%s()!!!!! 0x460 = 0x%x\n" ,__func__,PHY_QueryBBReg(padapter, 0x460, bMaskDWord));
+core/rtw_mp.c:1740:			DBG_8192C("%s , pmppriv->network_macaddr =%x %x %x %x %x %x\n",__func__,
+core/rtw_mp.c:2491:	DBG_8192C("txPower=%d ,CurrentChannelBW=%d ,CurrentChannel=%d ,rate =%d\n",TxPower,pHalData->CurrentChannelBW, pHalData->CurrentChannel,rate);
+core/rtw_ieee80211.c:894:		//DBG_8192C("==> found WPS_IE.....\n");
+core/efuse/rtw_efuse.c:977:			DBG_8192C("%s , data[%d] = %x, map[addr+i]= %x\n", __func__, i, data[i], map[addr+i]);
+core/efuse/rtw_efuse.c:1003:							 	DBG_8192C(" %s ,\n adjuseVoltageVal = %d ,newdata[%d] = %x \n",__func__,pHalData->adjuseVoltageVal,i,newdata[i]);	 
+core/efuse/rtw_efuse.c:1051:					/*DBG_8192C(" %s , data[%d] = %x\n", __func__, i, data[i]);*/
+core/efuse/rtw_efuse.c:1054:						/*DBG_8192C(" %s ,mask data[%d] = %x\n", __func__, i, data[i]);*/
+core/rtw_pwrctrl.c:2521:			DBG_8192C("hw still in rf_off state ...........\n");
+core/rtw_pwrctrl.c:2527:			DBG_8192C("%s call autoresume_enter....\n",__FUNCTION__);
+core/rtw_pwrctrl.c:2530:				DBG_8192C("======> autoresume fail.............\n");
+core/rtw_pwrctrl.c:2540:			DBG_8192C("%s call ips_leave....\n",__FUNCTION__);
+core/rtw_pwrctrl.c:2543:				DBG_8192C("======> ips_leave fail.............\n");
+core/rtw_pwrctrl.c:2556:		DBG_8192C("%s: bDriverStopped=%d, bup=%d, hw_init_completed=%u\n"
+core/rtw_bt_mp.c:36:	DBG_8192C("[MPT], MPh2c_timeout_handle \n");
+core/rtw_bt_mp.c:58:		DBG_8192C("[MPT], Error!! WaitC2Hevent mp_mode == 0!!\n");
+core/rtw_bt_mp.c:88:	//DBG_8192C("[MPT], MPT rsp C2H hex: %x %x %x  %x %x %x \n"), pExtC2h , pExtC2h+1 ,pExtC2h+2 ,pExtC2h+3 ,pExtC2h+4 ,pExtC2h+5);
+core/rtw_bt_mp.c:90:	DBG_8192C("[MPT], statusCode = 0x%x\n", pExtC2h->statusCode);
+core/rtw_bt_mp.c:91:	DBG_8192C("[MPT], retLen = %d\n", pExtC2h->retLen);
+core/rtw_bt_mp.c:92:	DBG_8192C("[MPT], opCodeVer : req/rsp=%d/%d\n", pH2c->opCodeVer, pExtC2h->opCodeVer);
+core/rtw_bt_mp.c:93:	DBG_8192C("[MPT], reqNum : req/rsp=%d/%d\n", pH2c->reqNum, pExtC2h->reqNum);
+core/rtw_bt_mp.c:97:		DBG_8192C("[MPT], Error!! C2H reqNum Mismatch!!\n");
+core/rtw_bt_mp.c:102:		DBG_8192C("[MPT], Error!! OPCode version L mismatch!!\n");
+core/rtw_bt_mp.c:120:	DBG_8192C("[MPT], mptbt_SendH2c()=========>\n");
+core/rtw_bt_mp.c:131:			DBG_8192C("[MPT], Send H2C command to wifi!!!\n");
+core/rtw_bt_mp.c:144:				DBG_8192C("[MPT], Received WiFi MptH2cRspEvent!!!\n");
+core/rtw_bt_mp.c:147:					DBG_8192C("[MPT], Received MptBtC2hEvent!!!\n");
+core/rtw_bt_mp.c:152:					DBG_8192C("[MPT], Error!!BT MptBtC2hEvent timeout!!\n");
+core/rtw_bt_mp.c:158:				DBG_8192C("[MPT], Error!!WiFi  MptH2cRspEvent timeout!!\n");
+core/rtw_bt_mp.c:169:	DBG_8192C("[MPT], mptbt_SendH2c()<=========\n");
+core/rtw_bt_mp.c:187:			DBG_8192C("[MPT], BT status : BT_STATUS_SUCCESS\n");
+core/rtw_bt_mp.c:191:			DBG_8192C("[MPT], BT status : BT_STATUS_OPCODE_L_VERSION_MISMATCH\n");
+core/rtw_bt_mp.c:195:			DBG_8192C("[MPT], BT status : BT_STATUS_UNKNOWN_OPCODE_L\n");
+core/rtw_bt_mp.c:199:			DBG_8192C("[MPT], BT status : BT_STATUS_PARAMETER_FORMAT_ERROR_L\n");
+core/rtw_bt_mp.c:203:			DBG_8192C("[MPT], BT status : BT_STATUS_UNKNOWN_STATUS_L\n");
+core/rtw_bt_mp.c:231:		DBG_8192C("[MPT], Error!! mptbt_BtFwOpCodeProces mp_mode == 0!!\n");
+core/rtw_bt_mp.c:242:	DBG_8192C("[MPT], pH2c->opCode=%d\n", pH2c->opCode);
+core/rtw_bt_mp.c:243:	DBG_8192C("[MPT], pH2c->opCodeVer=%d\n", pH2c->opCodeVer);
+core/rtw_bt_mp.c:244:	DBG_8192C("[MPT], pH2c->reqNum=%d\n", pH2c->reqNum);
+core/rtw_bt_mp.c:245:	DBG_8192C("[MPT], h2c parameter length=%d\n", h2cParaLen);
+core/rtw_bt_mp.c:248:		DBG_8192C("[MPT], parameter[%d]=0x%02x\n", i, pH2c->buf[i]);
+core/rtw_bt_mp.c:262:			DBG_8192C("[MPT], Error!! C2H failed for pH2c->opCode=%d\n", pH2c->opCode);
+core/rtw_bt_mp.c:269:		DBG_8192C("[MPT], Error!! H2C failed for pH2c->opCode=%d\n", pH2c->opCode);
+core/rtw_bt_mp.c:307:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:327:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:335:		DBG_8192C("[MPT], btRealFwVer=0x%x, btFwVer=0x%x\n", btRealFwVer, btFwVer);
+core/rtw_bt_mp.c:347:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:365:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:374:	DBG_8192C("[MPT], Local BDAddr:");
+core/rtw_bt_mp.c:377:		DBG_8192C(" 0x%x ", bdAddr[i]);
+core/rtw_bt_mp.c:457:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:465:		DBG_8192C("[MPT], BtTestMode=%d \n", btModeToSet);
+core/rtw_bt_mp.c:469:		DBG_8192C("[MPT], Error!! wrong parameter length=%d (should be 1)\n", pBtReq->paraLength);
+core/rtw_bt_mp.c:504:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:524:		//DBG_8192C("Ignore C2H BT MP Info since not in MP mode \n");
+core/rtw_bt_mp.c:529:		DBG_8192C("\n [MPT], pExtC2h->buf hex: length=%d > 32 || < 3\n",length);
+core/rtw_bt_mp.c:538:		DBG_8192C("[MPT], %s, buf[%d]=0x%02x ", __FUNCTION__, i, tmpBuf[i]);
+core/rtw_bt_mp.c:540:	DBG_8192C("[MPT], pExtC2h->extendId=0x%x\n", pExtC2h->extendId);
+core/rtw_bt_mp.c:545:			DBG_8192C("[MPT], EXT_C2H_WIFI_FW_ACTIVE_RSP\n");
+core/rtw_bt_mp.c:547:			DBG_8192C("[MPT], pExtC2h->buf hex: \n");
+core/rtw_bt_mp.c:550:				DBG_8192C(" 0x%x ", pExtC2h->buf[i]);
+core/rtw_bt_mp.c:562:			DBG_8192C("[MPT], EXT_C2H_TRIG_BY_BT_FW\n");
+core/rtw_bt_mp.c:564:			DBG_8192C("[MPT], pExtC2h->statusCode=0x%x\n", pExtC2h->statusCode);
+core/rtw_bt_mp.c:565:			DBG_8192C("[MPT], pExtC2h->retLen=0x%x\n", pExtC2h->retLen);
+core/rtw_bt_mp.c:566:			DBG_8192C("[MPT], pExtC2h->opCodeVer=0x%x\n", pExtC2h->opCodeVer);
+core/rtw_bt_mp.c:567:			DBG_8192C("[MPT], pExtC2h->reqNum=0x%x\n", pExtC2h->reqNum);
+core/rtw_bt_mp.c:570:				DBG_8192C("[MPT], pExtC2h->buf[%d]=0x%02x\n", i, pExtC2h->buf[i]);
+core/rtw_bt_mp.c:583:			DBG_8192C("[MPT], EXT_C2H Target not found,pExtC2h->extendId =%d ,pExtC2h->reqNum=%d\n",pExtC2h->extendId,pExtC2h->reqNum);
+core/rtw_bt_mp.c:622:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:629:		DBG_8192C("[MPT], Error!! wrong parameter length=%d (should larger than 1)\n", pBtReq->paraLength);
+core/rtw_bt_mp.c:636:	DBG_8192C("[MPT], getType=%d, getParaLen=%d\n", getType, getParaLen);
+core/rtw_bt_mp.c:642:			DBG_8192C("[MPT], [BT_GGET_REG]\n");
+core/rtw_bt_mp.c:650:				DBG_8192C("[MPT], BT_GGET_REG regType=0x%02x, regAddr=0x%08x!!\n",
+core/rtw_bt_mp.c:672:			DBG_8192C("[MPT], [BT_GGET_STATUS]\n");
+core/rtw_bt_mp.c:676:			DBG_8192C("[MPT], [BT_GGET_REPORT]\n");
+core/rtw_bt_mp.c:681:				DBG_8192C("[MPT], BT_GGET_REPORT reportType=0x%x!!\n", reportType);
+core/rtw_bt_mp.c:691:				DBG_8192C("[MPT], Error!! getType=%d, out of range\n", getType);
+core/rtw_bt_mp.c:699:		DBG_8192C("[MPT], Error!! wrong parameter length=%d for BT_GET_GEN_CMD cmd id=0x%x, paraLen should=0x%x\n",
+core/rtw_bt_mp.c:723:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:729:		DBG_8192C("[MPT], read reg regType=0x%02x, regAddr=0x%08x, regValue=0x%04x\n", 
+core/rtw_bt_mp.c:746:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:752:		DBG_8192C("[MPT], read bt status, testMode=0x%x, testStatus=0x%x\n", 
+core/rtw_bt_mp.c:762:					DBG_8192C("[MPT], [Rx Packet Counts]\n");
+core/rtw_bt_mp.c:771:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:785:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:795:					DBG_8192C("[MPT], [Rx Error Bits]\n");
+core/rtw_bt_mp.c:804:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:818:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:828:					DBG_8192C("[MPT], [RSSI]\n");
+core/rtw_bt_mp.c:837:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:847:					DBG_8192C("[MPT], [CFO & Header Quality]\n");
+core/rtw_bt_mp.c:856:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:870:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:880:					DBG_8192C("[MPT], [Connected Target BD ADDR]\n");
+core/rtw_bt_mp.c:889:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:904:						DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:911:					DBG_8192C("[MPT], Connected Target BDAddr:%s", bdAddr);
+core/rtw_bt_mp.c:960:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:967:		DBG_8192C("[MPT], Error!! wrong parameter length=%d (should larger than 1)\n", pBtReq->paraLength);
+core/rtw_bt_mp.c:974:	DBG_8192C("[MPT], setType=%d, setParaLen=%d\n", setType, setParaLen);
+core/rtw_bt_mp.c:980:			DBG_8192C ("[MPT], [BT_GSET_REG]\n");
+core/rtw_bt_mp.c:990:				DBG_8192C("[MPT], BT_GSET_REG regType=0x%x, regAddr=0x%x, regValue=0x%x!!\n", 
+core/rtw_bt_mp.c:1012:			DBG_8192C("[MPT], [BT_GSET_RESET]\n");
+core/rtw_bt_mp.c:1016:			DBG_8192C("[MPT], [BT_GSET_TARGET_BD_ADDR]\n");
+core/rtw_bt_mp.c:1028:					DBG_8192C("[MPT], Error!! targetBDAddr=all zero\n");
+core/rtw_bt_mp.c:1039:					DBG_8192C("[MPT], Error!! targetBDAddr=all 0xf\n");
+core/rtw_bt_mp.c:1049:				DBG_8192C ("[MPT], target BDAddr:%x,%x,%x,%x,%x,%x\n", 
+core/rtw_bt_mp.c:1054:			DBG_8192C("[MPT], [BT_GSET_TX_PWR_FINETUNE]\n");
+core/rtw_bt_mp.c:1065:				DBG_8192C ("[MPT], calVal=%d\n", calVal);
+core/rtw_bt_mp.c:1092:				DBG_8192C ("[MPT], Error!! setType=%d, out of range\n", setType);
+core/rtw_bt_mp.c:1100:		DBG_8192C("[MPT], Error!! wrong parameter length=%d for BT_SET_GEN_CMD cmd id=0x%x, paraLen should=0x%x\n",
+core/rtw_bt_mp.c:1124:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1140:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1154:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1171:			DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1185:			DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1200:			DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1217:					DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1231:					DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1245:					DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1281:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:1288:		DBG_8192C ("[MPT], pTxRxPars->txrxChannel=0x%x \n", pTxRxPars->txrxChannel);
+core/rtw_bt_mp.c:1289:		DBG_8192C ("[MPT], pTxRxPars->txrxTxPktCnt=0x%8x \n", pTxRxPars->txrxTxPktCnt);
+core/rtw_bt_mp.c:1290:		DBG_8192C  ("[MPT], pTxRxPars->txrxTxPktInterval=0x%x \n", pTxRxPars->txrxTxPktInterval);
+core/rtw_bt_mp.c:1291:		DBG_8192C  ("[MPT], pTxRxPars->txrxPayloadType=0x%x \n", pTxRxPars->txrxPayloadType);
+core/rtw_bt_mp.c:1292:		DBG_8192C  ("[MPT], pTxRxPars->txrxPktType=0x%x \n", pTxRxPars->txrxPktType);
+core/rtw_bt_mp.c:1293:		DBG_8192C  ("[MPT], pTxRxPars->txrxPayloadLen=0x%x \n", pTxRxPars->txrxPayloadLen);
+core/rtw_bt_mp.c:1294:		DBG_8192C  ("[MPT], pTxRxPars->txrxPktHeader=0x%x \n", pTxRxPars->txrxPktHeader);
+core/rtw_bt_mp.c:1295:		DBG_8192C  ("[MPT], pTxRxPars->txrxWhitenCoeff=0x%x \n", pTxRxPars->txrxWhitenCoeff); 	
+core/rtw_bt_mp.c:1302:		DBG_8192C  ("[MPT], pTxRxPars->txrxBdaddr: %s", &bdAddr[0]);
+core/rtw_bt_mp.c:1303:		DBG_8192C ("[MPT], pTxRxPars->txrxTxGainIndex=0x%x \n", pTxRxPars->txrxTxGainIndex);
+core/rtw_bt_mp.c:1307:		DBG_8192C  ("[MPT], Error!! pBtReq->paraLength=%d, correct Len=%d\n", pBtReq->paraLength, lenTxRx);
+core/rtw_bt_mp.c:1320:		DBG_8192C  ("[MPT], Error!! pTxRxPars->txrxPktHeader=0x%x is out of range, (should be between 0x0~0x3ffff)\n", pTxRxPars->txrxPktHeader);
+core/rtw_bt_mp.c:1337:		DBG_8192C  ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1379:					DBG_8192C  ("[MPT], Error!! Unknown pTxRxPars->txrxPktType=0x%x\n", pTxRxPars->txrxPktType);
+core/rtw_bt_mp.c:1388:			DBG_8192C ("[MPT], Error!! pTxRxPars->txrxPayloadLen=0x%x, (should smaller than %d)\n", 
+core/rtw_bt_mp.c:1405:		DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1413:		DBG_8192C  ("[MPT], Error!! pTxRxPars->txrxPayloadType=0x%x, (should be between 0~4)\n", pTxRxPars->txrxPayloadType);
+core/rtw_bt_mp.c:1430:		DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1438:	DBG_8192C  ("[MPT], Error!! pTxRxPars->txrxTxPktInterval=0x%x, (should be between 0~15)\n", pTxRxPars->txrxTxPktInterval);
+core/rtw_bt_mp.c:1455:		DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1471:		DBG_8192C  ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1481:		DBG_8192C ("[MPT], Error!! pTxRxPars->txrxChannel=0x%x, (should be between 0~78)\n", pTxRxPars->txrxChannel);
+core/rtw_bt_mp.c:1482:		DBG_8192C ("[MPT], Error!! pTxRxPars->txrxTxGainIndex=0x%x, (should be between 0~7)\n", pTxRxPars->txrxTxGainIndex);
+core/rtw_bt_mp.c:1498:		DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1511:		DBG_8192C ("[MPT], Error!! pTxRxPars->txrxBdaddr=all zero\n");
+core/rtw_bt_mp.c:1522:		DBG_8192C ("[MPT], Error!! pTxRxPars->txrxBdaddr=all 0xf\n");
+core/rtw_bt_mp.c:1538:		DBG_8192C ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1554:		DBG_8192C  ("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1586:		DBG_8192C("[MPT], Error!! Upper OP code version not match!!!\n");
+core/rtw_bt_mp.c:1594:		DBG_8192C("[MPT], testCtrl=%d \n", testCtrl);
+core/rtw_bt_mp.c:1598:		DBG_8192C("[MPT], Error!! wrong parameter length=%d (should be 1)\n", pBtReq->paraLength);
+core/rtw_bt_mp.c:1612:		DBG_8192C("[MPT], Error!! testCtrl=0x%x, (should be between smaller or equal to 0x%x)\n", 
+core/rtw_bt_mp.c:1628:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1669:		DBG_8192C("[MPT], Error!! status code=0x%x \n", pBtRsp->status);
+core/rtw_bt_mp.c:1691:	DBG_8192C("[MPT], mptbt_BtControlProcess()=========>\n");
+core/rtw_bt_mp.c:1693:	DBG_8192C("[MPT], input opCodeVer=%d\n", pBtReq->opCodeVer);
+core/rtw_bt_mp.c:1694:	DBG_8192C("[MPT], input OpCode=%d\n", pBtReq->OpCode);
+core/rtw_bt_mp.c:1695:	DBG_8192C("[MPT], paraLength=%d \n", pBtReq->paraLength);
+core/rtw_bt_mp.c:1698:		//DBG_8192C("[MPT], parameters(hex):0x%x %d \n",&pBtReq->pParamStart[0], pBtReq->paraLength);
+core/rtw_bt_mp.c:1712:			DBG_8192C("[MPT], OPcode : [BT_READY]\n");
+core/rtw_bt_mp.c:1716:			DBG_8192C("[MPT], OPcode : [BT_SET_MODE]\n");
+core/rtw_bt_mp.c:1720:			DBG_8192C("[MPT], OPcode : [BT_SET_TXRX_PARAMETER]\n");
+core/rtw_bt_mp.c:1724:			DBG_8192C("[MPT], OPcode : [BT_SET_GENERAL]\n");
+core/rtw_bt_mp.c:1728:			DBG_8192C("[MPT], OPcode : [BT_GET_GENERAL]\n");
+core/rtw_bt_mp.c:1732:			DBG_8192C("[MPT], OPcode : [BT_TEST_CTRL]\n");
+core/rtw_bt_mp.c:1736:			DBG_8192C("[MPT], OPcode : [TEST_BT]\n");
+core/rtw_bt_mp.c:1740:			DBG_8192C("[MPT], Error!! OPcode : UNDEFINED!!!!\n");
+core/rtw_bt_mp.c:1748:	DBG_8192C("[MPT], pMptCtx->mptOutLen=%d, pBtRsp->paraLength=%d\n", pMptCtx->mptOutLen, pBtRsp->paraLength);
+core/rtw_bt_mp.c:1749:	DBG_8192C("[MPT], mptbt_BtControlProcess()<=========\n");
+core/rtw_wapi_sms4.c:347:		DBG_8192C("############################%s(): PN[0]=0x%x\n", __FUNCTION__, PN[0]);
+core/rtw_recv.c:4704:	//DBG_8192C("process_rssi=> pattrib->rssil(%d) signal_strength(%d)\n ",pattrib->RecvSignalPower,pattrib->signal_strength);
+core/rtw_recv.c:4765:	//DBG_8192C("process_link_qual=> pattrib->signal_qual(%d)\n ",pattrib->signal_qual);
+core/rtw_xmit.c:1187:	//DBG_8192C("%s ==> mac_id(%d)\n",__FUNCTION__,pattrib->mac_id );
+core/rtw_xmit.c:2056:		DBG_8192C("==> %s buf_addr==NULL \n",__FUNCTION__);
+core/rtw_xmit.c:2076:		DBG_8192C("rtw_xmitframe_coalesce: rtw_make_wlanhdr fail; drop pkt\n");
+core/rtw_xmit.c:2199:		DBG_8192C("xmitframe_addmic(padapter, pxmitframe)==_FAIL\n");
+core/rtw_xmit.c:3379:		DBG_8192C("rtw_xmit_classifier: psta == NULL\n");
+core/rtw_btcoex.c:109:		DBG_8192C(FUNC_ADPT_FMT ": [BTCoex] under reset, skip notify!\n",
+core/rtw_btcoex.c:138:		DBG_8192C(FUNC_ADPT_FMT ": [BTCoex] under reset, skip notify!\n",
+core/rtw_wlan_util.c:902:	//DBG_8192C("********* DUMP CAM Entry_#%02d***************\n",entry);
+core/rtw_wlan_util.c:906:		//DBG_8192C("offset:0x%02x => 0x%08x \n",addr+j,cmd);
+core/rtw_wlan_util.c:910:	//DBG_8192C("*********************************\n");
+core/rtw_wlan_util.c:933:			DBG_8192C("offset:0x%02x => 0x%08x \n",addr+j,cmd);
+core/rtw_wlan_util.c:1347:			DBG_8192C( "[%s] Peer PORT NUM = %d\n", __FUNCTION__, pwdinfo->wfd_info->peer_rtsp_ctrlport );
+core/rtw_sreset.c:68:		DBG_8192C("txdmastatu(%x)\n",val32);
+core/rtw_sreset.c:74:		DBG_8192C("==>%s error_status(0x%x) \n",__FUNCTION__,psrtpriv->Wifi_Error_Status);
+core/rtw_sreset.c:77:	DBG_8192C("==> %s wifi_status(0x%x)\n",__FUNCTION__,status);
+core/rtw_debug.c:1682:		DBG_8192C("argument size is less than 1\n");
+core/rtw_debug.c:1691:			DBG_8192C("invalid set_rssi_disp parameter!\n");
+core/rtw_debug.c:1697:			DBG_8192C("Linked info Function Enable\n");
+core/rtw_debug.c:1702:			DBG_8192C("Linked info Function Disable\n");
+hal/rtl8723b/rtl8723b_dm.c:133:		DBG_8192C("CheckPbcGPIO - PBC is pressed\n");
+hal/rtl8723b/rtl8723b_dm.c:183:		DBG_8192C("%s(): Update interrrupt migration(%d)\n",__FUNCTION__,IntMtToSet);
+hal/rtl8723b/rtl8723b_dm.c:203:		DBG_8192C("%s(): Update AC interrrupt(%d)\n",__FUNCTION__,ACIntToSet);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:66:		DBG_8192C("=====================================\n");
+hal/rtl8723b/usb/rtl8723bu_xmit.c:67:		DBG_8192C("txdw0(0x%08x)\n",ptxdesc->txdw0);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:68:		DBG_8192C("txdw1(0x%08x)\n",ptxdesc->txdw1);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:69:		DBG_8192C("txdw2(0x%08x)\n",ptxdesc->txdw2);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:70:		DBG_8192C("txdw3(0x%08x)\n",ptxdesc->txdw3);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:71:		DBG_8192C("txdw4(0x%08x)\n",ptxdesc->txdw4);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:72:		DBG_8192C("txdw5(0x%08x)\n",ptxdesc->txdw5);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:73:		DBG_8192C("txdw6(0x%08x)\n",ptxdesc->txdw6);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:74:		DBG_8192C("txdw7(0x%08x)\n",ptxdesc->txdw7);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:75:		DBG_8192C("=====================================\n");
+hal/rtl8723b/usb/rtl8723bu_xmit.c:119:	//DBG_8192C("cvs_mode=%d\n", pattrib->vcs_mode);	
+hal/rtl8723b/usb/rtl8723bu_xmit.c:156:	//DBG_8192C("bwmode=%d, ch_off=%d\n", pattrib->bwmode, pattrib->ch_offset);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:346:		//DBG_8192C("rtw_write_port, w_sz=%d, sz=%d, txdesc_sz=%d, tid=%d\n", w_sz, sz, w_sz-sz, pattrib->priority);      
+hal/rtl8723b/usb/rtl8723bu_xmit.c:840:	//DBG_8192C("%s\n", __FUNCTION__);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:863:	//DBG_8192C("%s\n", __FUNCTION__);
+hal/rtl8723b/usb/rtl8723bu_xmit.c:932:	//DBG_8192C("mgnt_xmit, len=%x\n", pxmit_skb->len);
+hal/rtl8723b/usb/usb_ops.c:31:		DBG_8192C("%s Invalid interrupt content length (%d)!\n", __FUNCTION__, pkt_len);
+hal/rtl8723b/usb/usb_ops.c:78:			DBG_8192C("%s: HISR_BCNERLY_INT\n", __func__);
+hal/rtl8723b/usb/usb_ops.c:80:			DBG_8192C("%s: HISR_TXBCNOK\n", __func__);
+hal/rtl8723b/usb/usb_ops.c:82:			DBG_8192C("%s: HISR_TXBCNERR\n", __func__);
+hal/rtl8723b/usb/usb_ops.c:142:		DBG_8192C("%s() RX Warning! bDriverStopped(%d) OR bSurpriseRemoved(%d) \n", 
+hal/rtl8723b/usb/usb_ops.c:152:			DBG_8192C("usb_read_interrupt_complete: purb->actual_length > INTERRUPT_MSG_FORMAT_LEN(%d)\n",INTERRUPT_MSG_FORMAT_LEN);			
+hal/rtl8723b/usb/usb_ops.c:160:			DBG_8192C("cannot submit interrupt in-token(err = 0x%08x),urb_status = %d\n",err, purb->status);
+hal/rtl8723b/usb/usb_ops.c:165:		DBG_8192C("###=> usb_read_interrupt_complete => urb status(%d)\n", purb->status);
+hal/rtl8723b/usb/usb_ops.c:181:				DBG_8192C("ERROR: URB IS IN PROGRESS!/n");
+hal/rtl8723b/usb/usb_ops.c:221:		DBG_8192C("cannot submit interrupt in-token(err = 0x%08x),urb_status = %d\n",err, precvpriv->int_in_urb->status);
+hal/rtl8723b/usb/usb_ops.c:286:				DBG_8192C("pre_recv_entry(): rtw_skb_copy fail , drop frag frame \n");
+hal/rtl8723b/usb/usb_ops.c:294:				DBG_8192C("pre_recv_entry(): rtw_skb_clone fail , drop frame\n");
+hal/rtl8723b/usb/usb_ops.c:474:					DBG_8192C("%s()-%d: alloc_skb() failed!\n", __FUNCTION__, __LINE__);	
+hal/rtl8723b/usb/usb_ops.c:530:			DBG_8192C("%s: rtw_alloc_recvframe() failed! RX Drop!\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_ops.c:545:			DBG_8192C("%s: RX Warning! crc_err=%d icv_err=%d, skip!\n",
+hal/rtl8723b/usb/usb_ops.c:554:			DBG_8192C("%s: RX Error! pkt_len=%d pkt_offset=%d transfer_len=%d\n",
+hal/rtl8723b/usb/usb_ops.c:563:			DBG_8192C("%s: RX Error! rtw_os_alloc_recvframe FAIL!\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_ops.c:581:					//DBG_8192C("%s: RX Error! (concurrent)pre_recv_entry FAIL!\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_ops.c:591:				//DBG_8192C("%s: RX Error! rtw_recv_entry FAIL!\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_ops.c:600:				DBG_8192C("%s: [WARNNING] RX type(%d) not be handled!\n",
+hal/rtl8723b/usb/usb_ops.c:633:			DBG_8192C("xmit_tasklet => bDriverStopped or bSurpriseRemoved or bWritePortCancel\n");
+hal/rtl8723b/usb/usb_halinit.c:39:		DBG_8192C("offset : 0x%02x ,val:0x%08x\n",offset,val32);
+hal/rtl8723b/usb/usb_halinit.c:239:	//DBG_8192C("%s: REG_PWR_DATA(0x%x)=0x%04X\n", __FUNCTION__, REG_PWR_DATA, rtw_read16(padapter, REG_PWR_DATA));
+hal/rtl8723b/usb/usb_halinit.c:244:	//DBG_8192C("%s: REG_LEDCFG0(0x%x)=0x%08X\n", __FUNCTION__, REG_LEDCFG0, rtw_read32(padapter, REG_LEDCFG0));
+hal/rtl8723b/usb/usb_halinit.c:249:	//DBG_8192C("%s: REG_PAD_CTRL1(0x%x)=0x%02X\n", __FUNCTION__, REG_PAD_CTRL1_8723B, rtw_read8(padapter, REG_PAD_CTRL1_8723B));
+hal/rtl8723b/usb/usb_halinit.c:868:		DBG_8192C("%s: RX Agg-DMA mode, size=%dKB, timeout=%dus\n",
+hal/rtl8723b/usb/usb_halinit.c:885:		DBG_8192C("%s: RX Agg-USB mode, size=%dKB, timeout=%dus\n",
+hal/rtl8723b/usb/usb_halinit.c:891:		DBG_8192C("%s: RX Aggregation Disable!\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_halinit.c:990:	DBG_8192C("HalDetectPwrDownMode(): PDN=%d\n", pHalData->pwrdown);
+hal/rtl8723b/usb/usb_halinit.c:1016:	DBG_8192C("HalDetectSelectiveSuspendMode(): SS ");
+hal/rtl8723b/usb/usb_halinit.c:1019:		DBG_8192C("Enable\n");
+hal/rtl8723b/usb/usb_halinit.c:1023:		DBG_8192C("Disable\n");
+hal/rtl8723b/usb/usb_halinit.c:1106:		DBG_8192C("pwrdown, 0x5c(BIT7)=%02x\n", val8);
+hal/rtl8723b/usb/usb_halinit.c:1113:		DBG_8192C("GPIO_IN=%02x\n", val8);
+hal/rtl8723b/usb/usb_halinit.c:1835:					DBG_8192C("%s #####=> 8051 reset failed!.........................\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_halinit.c:1978:	DBG_8192C("PowerDownRTL8723U\n");
+hal/rtl8723b/usb/usb_halinit.c:2008:	DBG_8192C(FUNC_ADPT_FMT ": bMacPwrCtrlOn=%d\n", FUNC_ADPT_ARG(Adapter), u1bTmp);
+hal/rtl8723b/usb/usb_halinit.c:2048:	DBG_8192C("==> %s\n", __FUNCTION__);
+hal/rtl8723b/usb/usb_halinit.c:2184:	DBG_8192C("%s MAC Address from EFUSE = "MAC_FMT"\n",__FUNCTION__, MAC_ARG(pHalData->EEPROMMACAddr));
+hal/rtl8723b/usb/usb_halinit.c:2267:		DBG_8192C("%s...bHWPwrPindetect(%x)-bHWPowerdown(%x) ,bSupportRemoteWakeup(%x)\n",__FUNCTION__,
+hal/rtl8723b/usb/usb_halinit.c:2270:		DBG_8192C("### PS params=>  power_mgnt(%x),usbss_enable(%x) ###\n",Adapter->registrypriv.power_mgnt,Adapter->registrypriv.usbss_enable);
+hal/rtl8723b/usb/usb_halinit.c:2515:	DBG_8192C("%s(): REPLACEMENT = %x\n",__FUNCTION__,padapter->bDongle);
+hal/rtl8723b/usb/usb_halinit.c:2534:	DBG_8192C("Boot from %s, Autoload %s !\n", (pHalData->EepromOrEfuse ? "EEPROM" : "EFUSE"),
+hal/rtl8723b/rtl8723b_hal_init.c:298:	DBG_8192C("%s: Finish\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:522:		DBG_8192C("_CheckWLANFwPatchBTFwReady_8723B(): Failed to init LLT!\n");
+hal/rtl8723b/rtl8723b_hal_init.c:889:		DBG_8192C("%s: BT Firmware is ready!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:896:		DBG_8192C("%s: accquire MP BT FW from file:%s\n", __FUNCTION__, rtw_fw_mp_bt_file_path);
+hal/rtl8723b/rtl8723b_hal_init.c:906:		DBG_8192C("%s: Download MP BT FW from header\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:915:	DBG_8192C("%s: MP BT Firmware size=%d\n", __FUNCTION__, BTFirmwareLen);
+hal/rtl8723b/rtl8723b_hal_init.c:921:	DBG_8192C("%s: download_time is %d\n", __FUNCTION__, download_time);
+hal/rtl8723b/rtl8723b_hal_init.c:929:			DBG_8192C("%s: start %d, len %d, time 1\n", __FUNCTION__, 4096*i, BTFirmwareLen-(4096*i));
+hal/rtl8723b/rtl8723b_hal_init.c:934:			DBG_8192C("%s: start %d, len 4096, time %d\n", __FUNCTION__, 4096*i, download_time-i);
+hal/rtl8723b/rtl8723b_hal_init.c:939:			DBG_8192C("%s: BT Firmware download to Tx packet buffer fail!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:951:	DBG_8192C("<===%s: return %s!\n", __FUNCTION__, rtStatus==_SUCCESS?"SUCCESS":"FAIL");
+hal/rtl8723b/rtl8723b_hal_init.c:1035:		DBG_8192C("%s accquire FW from file:%s\n", __FUNCTION__, fwfilepath);
+hal/rtl8723b/rtl8723b_hal_init.c:1067:				DBG_8192C(" ===> %s fw: %s, size: %d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:1076:				DBG_8192C(" ===> %s fw: %s, size: %d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:1087:		 			DBG_8192C("%s fw: %s, size: %d\n", __FUNCTION__, "FW_NIC", pFirmware->ulFwLength);
+hal/rtl8723b/rtl8723b_hal_init.c:1093:		 			DBG_8192C("%s fw: %s, size: %d\n", __FUNCTION__, "FW_MP", pFirmware->ulFwLength);
+hal/rtl8723b/rtl8723b_hal_init.c:1261:	DBG_8192C("%s: Efuse switch bank to %d\n", __FUNCTION__, bank);
+hal/rtl8723b/rtl8723b_hal_init.c:1498:				DBG_8192C(FUNC_ADPT_FMT ": Leave SDIO local register suspend fail! Local 0x86=%#X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:1503:				DBG_8192C(FUNC_ADPT_FMT ": Leave SDIO local register suspend OK! Local 0x86=%#X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:1574:		DBG_8192C("%s: Invalid offset(%#x) with read bytes(%#x)!!\n", __FUNCTION__, _offset, _size_byte);
+hal/rtl8723b/rtl8723b_hal_init.c:1581:		DBG_8192C("%s: alloc efuseTbl fail!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:1615:			DBG_8192C("%s: data end at address=%#x\n", __FUNCTION__, eFuse_Addr-1);
+hal/rtl8723b/rtl8723b_hal_init.c:1618:		//DBG_8192C("%s: efuse[0x%X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseHeader);
+hal/rtl8723b/rtl8723b_hal_init.c:1624:			//DBG_8192C("%s: extended header offset=0x%X\n", __FUNCTION__, offset);
+hal/rtl8723b/rtl8723b_hal_init.c:1628:			//DBG_8192C("%s: efuse[0x%X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseExtHdr);
+hal/rtl8723b/rtl8723b_hal_init.c:1642:		//DBG_8192C("%s: Offset=%d Worden=0x%X\n", __FUNCTION__, offset, wden);
+hal/rtl8723b/rtl8723b_hal_init.c:1648://			DBG_8192C("%s: Offset=%d Worden=0x%X\n", __FUNCTION__, offset, wden);
+hal/rtl8723b/rtl8723b_hal_init.c:1659://					DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseData);
+hal/rtl8723b/rtl8723b_hal_init.c:1665://					DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseData);
+hal/rtl8723b/rtl8723b_hal_init.c:1673:			DBG_8192C(KERN_ERR "%s: offset(%d) is illegal!!\n", __FUNCTION__, offset);
+hal/rtl8723b/rtl8723b_hal_init.c:1748:		DBG_8192C("%s: Invalid offset(%#x) with read bytes(%#x)!!\n", __FUNCTION__, _offset, _size_byte);
+hal/rtl8723b/rtl8723b_hal_init.c:1754:		DBG_8192C("%s: efuseTbl malloc fail!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:1767:			DBG_8192C("%s: hal_EfuseSwitchToBank Fail!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:1778:			DBG_8192C("%s: efuse[%#X]=0x%02x (header)\n", __FUNCTION__, (((bank-1)*EFUSE_REAL_CONTENT_LEN_8723B)+eFuse_Addr-1), efuseHeader);
+hal/rtl8723b/rtl8723b_hal_init.c:1784:				DBG_8192C("%s: extended header offset_2_0=0x%X\n", __FUNCTION__, offset);
+hal/rtl8723b/rtl8723b_hal_init.c:1788:				DBG_8192C("%s: efuse[%#X]=0x%02x (ext header)\n", __FUNCTION__, (((bank-1)*EFUSE_REAL_CONTENT_LEN_8723B)+eFuse_Addr-1), efuseExtHdr);
+hal/rtl8723b/rtl8723b_hal_init.c:1808:				DBG_8192C("%s: Offset=%d Worden=%#X\n", __FUNCTION__, offset, wden);
+hal/rtl8723b/rtl8723b_hal_init.c:1819:						DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseData);
+hal/rtl8723b/rtl8723b_hal_init.c:1825:						DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, eFuse_Addr-1, efuseData);
+hal/rtl8723b/rtl8723b_hal_init.c:1833:				DBG_8192C("%s: offset(%d) is illegal!!\n", __FUNCTION__, offset);
+hal/rtl8723b/rtl8723b_hal_init.c:1840:			DBG_8192C("%s: bank(%d) data end at %#x\n", __FUNCTION__, bank, eFuse_Addr-1);
+hal/rtl8723b/rtl8723b_hal_init.c:1857:	DBG_8192C("%s: bank(%d) data end at %#x ,used =%d\n", __FUNCTION__, bank, eFuse_Addr-1,used);
+hal/rtl8723b/rtl8723b_hal_init.c:1925:	DBG_8192C("%s: start_efuse_addr=0x%X\n", __FUNCTION__, efuse_addr);
+hal/rtl8723b/rtl8723b_hal_init.c:1932:	DBG_8192C(FUNC_ADPT_FMT ": efuse raw 0x1FF=0x%02X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:1943:			DBG_8192C(KERN_ERR "%s: efuse_OneByteRead Fail! addr=0x%X !!\n", __FUNCTION__, efuse_addr);
+hal/rtl8723b/rtl8723b_hal_init.c:1955:			DBG_8192C(FUNC_ADPT_FMT ": [WARNING] efuse raw 0x%X=0x%02X not 0xFF!!(%d times)\n",
+hal/rtl8723b/rtl8723b_hal_init.c:2019:	DBG_8192C("%s: CurrentSize=%d\n", __FUNCTION__, efuse_addr);
+hal/rtl8723b/rtl8723b_hal_init.c:2058:	DBG_8192C("%s: start from bank=%d addr=0x%X\n", __FUNCTION__, startBank, efuse_addr);
+hal/rtl8723b/rtl8723b_hal_init.c:2066:			DBG_8192C(KERN_ERR "%s: switch bank(%d) Fail!!\n", __FUNCTION__, bank);
+hal/rtl8723b/rtl8723b_hal_init.c:2080:				DBG_8192C(KERN_ERR "%s: efuse_OneByteRead Fail! addr=0x%X !!\n", __FUNCTION__, efuse_addr);
+hal/rtl8723b/rtl8723b_hal_init.c:2084:			DBG_8192C("%s: efuse_OneByteRead ! addr=0x%X !efuse_data=0x%X! bank =%d\n", __FUNCTION__, efuse_addr,efuse_data,bank);
+hal/rtl8723b/rtl8723b_hal_init.c:2093:				DBG_8192C("%s: efuse_OneByteRead EXT_HEADER ! addr=0x%X !efuse_data=0x%X! bank =%d\n", __FUNCTION__, efuse_addr,efuse_data,bank);
+hal/rtl8723b/rtl8723b_hal_init.c:2111:			DBG_8192C(FUNC_ADPT_FMT": Offset=%d Worden=%#X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:2192:	DBG_8192C("%s: CurrentSize=%d\n", __FUNCTION__, retU2);
+hal/rtl8723b/rtl8723b_hal_init.c:2226://	DBG_8192C("%s: efuse_addr=%#x word_en=%#x\n", __FUNCTION__, efuse_addr, word_en);
+hal/rtl8723b/rtl8723b_hal_init.c:2303:		DBG_8192C("%s: Packet offset(%d) is illegal(>%d)!\n", __FUNCTION__, offset, max_section);
+hal/rtl8723b/rtl8723b_hal_init.c:2331:				DBG_8192C("%s: Error!! All words disabled!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2353://					DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, efuse_addr+tmpidx, efuse_data);
+hal/rtl8723b/rtl8723b_hal_init.c:2358://					DBG_8192C("%s: efuse[%#X]=0x%02X\n", __FUNCTION__, efuse_addr+tmpidx, efuse_data);
+hal/rtl8723b/rtl8723b_hal_init.c:2384://	DBG_8192C("%s: max_available=%d\n", __FUNCTION__, max_available);
+hal/rtl8723b/rtl8723b_hal_init.c:2389:		DBG_8192C("%s: Error!! current_size(%d)>max_available(%d)\n", __FUNCTION__, current_size, max_available);
+hal/rtl8723b/rtl8723b_hal_init.c:2463:			DBG_8192C("%s: efuse_OneByteRead FAIL!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2533:	DBG_8192C("%s: startAddr=%#X\n", __FUNCTION__, startAddr);
+hal/rtl8723b/rtl8723b_hal_init.c:2540:			DBG_8192C("%s: startAddr(%d) >= efuse_max_available_len(%d)\n",
+hal/rtl8723b/rtl8723b_hal_init.c:2549:			DBG_8192C("%s: Something Wrong! last bytes(%#X=0x%02X) is not 0xFF\n",
+hal/rtl8723b/rtl8723b_hal_init.c:2560:					DBG_8192C("%s: Error condition, all words disabled!", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2584:				DBG_8192C("%s: Need to partial write data by the previous wrote header\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2620://			DBG_8192C("%s: Started from unused header offset=%d\n", __FUNCTION__, startAddr));
+hal/rtl8723b/rtl8723b_hal_init.c:2643://	DBG_8192C("%s\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2652:			DBG_8192C("%s: Repeat over limit for pg_header!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2659:		DBG_8192C(KERN_ERR "%s: PG Header Fail!!(pg=0x%02X read=0x%02X)\n", __FUNCTION__, pg_header, tmp_header);
+hal/rtl8723b/rtl8723b_hal_init.c:2681://	DBG_8192C("%s\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2687:		DBG_8192C("%s: addr(%d) over avaliable(%d)!!\n", __FUNCTION__, efuse_addr, efuse_max_available_len);
+hal/rtl8723b/rtl8723b_hal_init.c:2692://	DBG_8192C("%s: pg_header=0x%x\n", __FUNCTION__, pg_header);
+hal/rtl8723b/rtl8723b_hal_init.c:2700:			DBG_8192C("%s: Repeat over limit for pg_header!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2707:		DBG_8192C(KERN_ERR "%s: PG Header Fail!!(pg=0x%02X read=0x%02X)\n", __FUNCTION__, pg_header, tmp_header);
+hal/rtl8723b/rtl8723b_hal_init.c:2721:			DBG_8192C("%s: Repeat over limit for ext_header!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2728:		DBG_8192C(KERN_ERR "%s: PG EXT Header Fail!!(pg=0x%02X read=0x%02X)\n", __FUNCTION__, pg_header, tmp_header);
+hal/rtl8723b/rtl8723b_hal_init.c:2775:		DBG_8192C("%s: Fail!!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:2779://	DBG_8192C("%s: ok\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:3549:			DBG_8192C("%s: FAIL!! REG_AUTO_LLT(0x%X)=%08x\n",
+hal/rtl8723b/rtl8723b_hal_init.c:3994:		DBG_8192C("EEPROM ID(%#x) is invalid!!\n", EEPROMId);
+hal/rtl8723b/rtl8723b_hal_init.c:4318:		DBG_8192C("%s: Apply driver defined antenna number(%d) to replace origin(%d)\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4331:			DBG_8192C("%s: Discard invalid driver defined antenna number(%d)!\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4346:	DBG_8192C("%s: %s BT-coex, ant_num=%d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4507:			DBG_8192C("%s: efuse[0x%x]=0x%02x is unknown type\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4514:	DBG_8192C("%s: AntDivCfg=%d, AntDivType=%d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4736:	//DBG_8192C("cvs_mode=%d\n", pattrib->vcs_mode);
+hal/rtl8723b/rtl8723b_hal_init.c:4770:	//DBG_8192C("bwmode=%d, ch_off=%d\n", pattrib->bwmode, pattrib->ch_offset);
+hal/rtl8723b/rtl8723b_hal_init.c:4886:			DBG_8192C(FUNC_ADPT_FMT ": SP Packet(0x%04X) rate=0x%x\n",
+hal/rtl8723b/rtl8723b_hal_init.c:4899:			DBG_8192C("%s set spe_rpt\n", __func__);
+hal/rtl8723b/rtl8723b_hal_init.c:4941:			DBG_8192C("%s set spe_rpt\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:5910:		DBG_8192C("%s(): pC2hEventis NULL\n",__FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:5981:			DBG_8192C(" %s, C2H_8723B_BT_MP_INFO pC2hEvent->plen=%d\n",__func__,pC2hEvent->plen);
+hal/rtl8723b/rtl8723b_hal_init.c:6005:		DBG_8192C("%s c2hbuff is NULL\n",__FUNCTION__);
+hal/rtl8723b/rtl8723b_hal_init.c:6140:	DBG_8192C("%s: C2H, ID=%d seq=%d len=%d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:6312:			DBG_8192C("HW_VAR_BASIC_RATE: %#x -> %#x -> %#x\n", input_b, masked, ioted);
+hal/rtl8723b/rtl8723b_hal_init.c:6382:			DBG_8192C("%s, %d, RCR= %x\n", __FUNCTION__, __LINE__, rtw_read32(padapter, REG_RCR));
+hal/rtl8723b/rtl8723b_hal_init.c:6389:			DBG_8192C("%s, %d, RCR= %x\n", __FUNCTION__, __LINE__, rtw_read32(padapter, REG_RCR));
+hal/rtl8723b/rtl8723b_hal_init.c:6522:				DBG_8192C("[HW_VAR_ACM_CTRL] Write 0x%02X\n", hwctrl);
+hal/rtl8723b/rtl8723b_hal_init.c:6596:				//DBG_8192C("==> HW_VAR_ANTENNA_DIVERSITY_SELECT , Ant_(%s)\n",(Optimum_antenna==2)?"A":"B");
+hal/rtl8723b/rtl8723b_hal_init.c:6655:						DBG_8192C("[HW_VAR_FIFO_CLEARN_UP] Stop RX DMA failed......\n");
+hal/rtl8723b/rtl8723b_hal_init.c:6705:			DBG_8192C("%s: bMacPwrCtrlOn=%d\n", __func__, pHalData->bMacPwrCtrlOn);
+hal/rtl8723b/rtl8723b_hal_init.c:6820:			DBG_8192C(FUNC_ADPT_FMT ": [HW_VAR_MACID_SLEEP] macid=%d, org reg_0x%03x=0x%08X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:6855:			DBG_8192C(FUNC_ADPT_FMT ": [HW_VAR_MACID_WAKEUP] macid=%d, org reg_0x%03x=0x%08X\n",
+hal/rtl8723b/rtl8723b_hal_init.c:7165:				DBG_8192C("============ RA status check  Mac_id:%d ===================\n", mac_id);
+hal/rtl8723b/rtl8723b_hal_init.c:7173:				DBG_8192C("[ ra_info1:0x%08x ] =>cur_tx_rate= %s,cur_sgi:%d, PWRSTS = 0x%02x  \n",
+hal/rtl8723b/rtl8723b_hal_init.c:7189:				DBG_8192C("[ ra_info1:0x%08x ] =>RSSI=%d, BW_setting=0x%02x, DISRA=0x%02x, VHT_EN=0x%02x\n",
+hal/rtl8723b/rtl8723b_hal_init.c:7196:				DBG_8192C("[ ra_info2:0x%08x ] =>hight_rate=%s, lowest_rate=%s, SGI=0x%02x, RateID=%d\n",
+hal/rtl8723b/rtl8723b_hal_init.c:7203:				DBG_8192C("rate_mask2=0x%08x, rate_mask1=0x%08x\n", rate_mask2, rate_mask1);
+hal/rtl8723b/rtl8723b_mp.c:572:			DBG_8192C("HT Tx-rf(A) Power = 0x%x\n", TxAGC);
+hal/rtl8723b/rtl8723b_mp.c:584:			DBG_8192C("HT Tx-rf(B) Power = 0x%x\n", TxAGC);
+hal/rtl8723b/rtl8723b_mp.c:621:				DBG_8192C("===> MPT_ProSetTxPower: Jaguar\n");
+hal/rtl8723b/rtl8723b_mp.c:630:				DBG_8192C("===> MPT_ProSetTxPower: Others\n");
+hal/rtl8723b/rtl8723b_mp.c:638:		   DBG_8192C("RFChipID < RF_TYPE_MAX, the RF chip is not supported - %d\n", pHalData->rf_chip);
+hal/rtl8723b/rtl8723b_mp.c:711:		DBG_8192C("This RF chip ID is not supported\n");
+hal/rtl8723b/rtl8723b_mp.c:738:						DBG_8192C("Switch to S1 TxIQC(offset, data) = (0x%X, 0x%X)\n", offset, data);
+hal/rtl8723b/rtl8723b_mp.c:748:						DBG_8192C("Switch to S1 RxIQC (offset, data) = (0x%X, 0x%X)\n", offset, data);
+hal/rtl8723b/rtl8723b_mp.c:773:					 DBG_8192C("Switch to S0 TxIQC (offset, data) = (0x%X, 0x%X)\n", offset, data);
+hal/rtl8723b/rtl8723b_mp.c:783:						DBG_8192C("Switch to S0 RxIQC (offset, data) = (0x%X, 0x%X)\n", offset, data);
+hal/rtl8723b/rtl8723b_mp.c:1390:			DBG_8192C("HwRateToMRate8723B(): Non supported Rate [%x]!!!\n",rate );
+hal/rtl8723b/rtl8723b_phycfg.c:680:		DBG_8192C("%s():Write BB Reg Fail!!", __func__);
+hal/rtl8723b/rtl8723b_phycfg.c:701:			DBG_8192C("%s():Write BB Reg MP Fail!!", __func__);
+hal/rtl8723b/rtl8723b_phycfg.c:730:			DBG_8192C("%s():BB_PG Reg Fail!!\n",__func__);
+hal/rtl8723b/rtl8723b_phycfg.c:748:		DBG_8192C("%s():AGC Table Fail\n", __func__);
+hal/rtl8723b/rtl8723b_phycfg.c:1105:	DBG_8192C("===>phy_SpurCalibration_8723B: Channel = %d\n", ToChannel);
+hal/rtl8723b/rtl8723b_phycfg.c:1376:	DBG_8192C("===>phy_SwChnl8723B: Channel = %d\n", channelToSW);
+hal/rtl8723b/rtl8723b_sreset.c:44:	//DBG_8192C("==>%s free_xmitbuf_cnt(%d),txirp_cnt(%d)\n",__FUNCTION__,pxmitpriv->free_xmitbuf_cnt,pxmitpriv->txirp_cnt);
+hal/rtl8723b/rtl8723b_sreset.c:97:		DBG_8192C("%s regc50:0x%08x, regc58:0x%08x, reg824:0x%08x, reg800:0x%08x,\n", __FUNCTION__,
+hal/rtl8723b/rtl8723b_cmd.c:38:	//DBG_8192C(" _is_fw_read_cmd_down ,reg_1cc(%x),msg_box(%d)...\n",rtw_read8(padapter,REG_HMETFR),msgbox_num);
+hal/rtl8723b/rtl8723b_cmd.c:104:			DBG_8192C(" fw read cmd failed...\n");
+hal/rtl8723b/rtl8723b_cmd.c:109:			//DBG_8192C(" 0x1c0: 0x%8x\n", rtw_read32(padapter, 0x1c0));
+hal/rtl8723b/rtl8723b_cmd.c:110:			//DBG_8192C(" 0x1c4: 0x%8x\n", rtw_read32(padapter, 0x1c4));
+hal/rtl8723b/rtl8723b_cmd.c:135:		//DBG_8192C("MSG_BOX:%d, CmdLen(%d), CmdID(0x%x), reg:0x%x =>h2c_cmd:0x%.8x, reg:0x%x =>h2c_cmd_ex:0x%.8x\n"
+hal/rtl8723b/rtl8723b_cmd.c:1473:	DBG_8192C("%s: idx=%d ver=%d reqnum=%d param1=0x%02x param2=0x%02x\n", __FUNCTION__, idx, ver, reqnum, param[0], param[1]);
+hal/rtl8723b/rtl8723b_cmd.c:2038:		DBG_8192C("%s, KEK, KCK download rsvd page all zero \n", __func__);
+hal/rtl8723b/rtl8723b_cmd.c:2336:	DBG_8192C("+" FUNC_ADPT_FMT ": iface_type=%d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2445:	DBG_8192C("+" FUNC_ADPT_FMT ": iface_type=%d mstatus(%x)\n",
+hal/rtl8723b/rtl8723b_cmd.c:2686://	DBG_8192C("+" FUNC_ADPT_FMT "\n", FUNC_ADPT_ARG(padapter));
+hal/rtl8723b/rtl8723b_cmd.c:2701:		DBG_8192C("%s: alloc ReservedPagePacket fail!\n", __FUNCTION__);
+hal/rtl8723b/rtl8723b_cmd.c:2748:		DBG_8192C(FUNC_ADPT_FMT ": ERROR: The rsvd page size is not enough!!TotalPacketLen %d, MaxRsvdPageBufSize %d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2764://	DBG_8192C(FUNC_ADPT_FMT ": Set RSVD page location to Fw, TotalPacketLen(%d), TotalPageNum(%d)\n",
+hal/rtl8723b/rtl8723b_cmd.c:2787:	DBG_8192C("+" FUNC_ADPT_FMT ": iface_type=%d fw_state=0x%08X\n",
+hal/rtl8723b/rtl8723b_cmd.c:2793:		DBG_8192C(FUNC_ADPT_FMT ": [WARNING] not in AP mode!!\n",
+hal/rtl8723b/rtl8723b_cmd.c:2849:		DBG_8192C(ADPT_FMT": DL RSVD page success! DLBcnCount:%d, poll:%d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2854:		DBG_8192C(ADPT_FMT": DL RSVD page fail! DLBcnCount:%d, poll:%d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2856:		DBG_8192C(ADPT_FMT": DL RSVD page fail! bSurpriseRemoved=%d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2858:		DBG_8192C(ADPT_FMT": DL RSVD page fail! bDriverStopped=%d\n",
+hal/rtl8723b/rtl8723b_cmd.c:2903:			DBG_8192C("P2P_PS_DISABLE \n");
+hal/rtl8723b/rtl8723b_cmd.c:2907:			DBG_8192C("P2P_PS_ENABLE \n");
+hal/rtl8723b/rtl8723b_cmd.c:2926:				//DBG_8192C("%s(): noa_duration = %x\n",__FUNCTION__,pwdinfo->noa_duration[i]);
+hal/rtl8723b/rtl8723b_cmd.c:2929:				//DBG_8192C("%s(): noa_interval = %x\n",__FUNCTION__,pwdinfo->noa_interval[i]);
+hal/rtl8723b/rtl8723b_cmd.c:2932:				//DBG_8192C("%s(): start_time = %x\n",__FUNCTION__,pwdinfo->noa_start_time[i]);
+hal/rtl8723b/rtl8723b_cmd.c:2935:				//DBG_8192C("%s(): noa_count = %x\n",__FUNCTION__,pwdinfo->noa_count[i]);
+hal/rtl8723b/rtl8723b_cmd.c:2960:			DBG_8192C("P2P_PS_SCAN \n");
+hal/rtl8723b/rtl8723b_cmd.c:2964:			DBG_8192C("P2P_PS_SCAN_DONE \n");
+hal/OUTSRC/phydm_RaInfo.c:2104:	/*DBG_8192C("%s=>MinUndecoratedPWDBForDM(%d)\n",__FUNCTION__,pdmpriv->MinUndecoratedPWDBForDM);*/
+hal/hal_intf.c:64:			DBG_8192C("cant not alloc memory for HAL DATA \n");
+hal/hal_hci/hal_usb.c:53:		DBG_8192C("alloc_urb for interrupt in endpoint fail !!!!\n");
+hal/hal_hci/hal_usb.c:60:		DBG_8192C("alloc_mem for interrupt in endpoint fail !!!!\n");
+hal/hal_hci/hal_usb.c:190:		DBG_8192C(KERN_WARNING "rx_skb_queue not empty\n");
+hal/hal_hci/hal_usb.c:196:		DBG_8192C(KERN_WARNING "free_recv_skb_queue not empty, %d\n", skb_queue_len(&precvpriv->free_recv_skb_queue));
+hal/hal_com.c:4426:			DBG_8192C("%s, KEK, KCK download rsvd page all zero \n",
+hal/hal_com.c:4805:	DBG_8192C("+" FUNC_ADPT_FMT ": iface_type=%d\n",
+hal/hal_com.c:5548:				DBG_8192C("### Noise monitor chan(%d)-noise:%d (dBm) ###\n",
+hal/hal_com.c:5574:					DBG_8192C("### Set STA_(%d) info ###\n",psta->mac_id);
+hal/hal_com.c:5578:					DBG_8192C("### Clean STA_(%d) info ###\n",psta->mac_id);
+hal/hal_com.c:5602:				DBG_8192C("### Noise monitor chan(%d)-bPauseDIG:%d,IGIValue:0x%02x,max_time:%d (ms) ###\n",
+include/rtw_debug.h:162:	#define DBG_8192C do {} while(0)
+include/rtw_debug.h:167:	#define DBG_8192C(x,...) do {} while(0)
+include/rtw_debug.h:262:	#undef DBG_8192C
+include/rtw_debug.h:263:	#define DBG_8192C(...)     do {\
+include/rtw_br_ext.h:26:#define _DEBUG_ERR		DBG_8192C
+include/rtw_br_ext.h:27:#define _DEBUG_INFO		//DBG_8192C
+include/rtw_br_ext.h:28:#define DEBUG_WARN		DBG_8192C
+include/rtw_br_ext.h:29:#define DEBUG_INFO		//DBG_8192C
+include/rtw_br_ext.h:30:#define DEBUG_ERR		DBG_8192C
+os_dep/linux/rtw_android.c:514:		DBG_8192C("%s, : Obtain Sta_info fail \n", __func__);
+os_dep/linux/usb_ops_linux.c:68:		DBG_8192C( "[%s] Buffer len error ,vendor request failed\n", __FUNCTION__ );
+os_dep/linux/usb_ops_linux.c:96:		DBG_8192C( "[%s] pIo_buf == NULL \n", __FUNCTION__ );
+os_dep/linux/usb_ops_linux.c:128:			DBG_8192C("reg 0x%x, usb %s %u fail, status:%d value=0x%x, vendorreq_times:%d\n"
+os_dep/linux/usb_ops_linux.c:281:	//DBG_8192C("+usb_bulkout_zero_complete\n");
+os_dep/linux/usb_ops_linux.c:389:			//DBG_8192C("usb_read_port_cancel : usb_kill_urb \n");
+os_dep/linux/usb_ops_linux.c:442:			//DBG_8192C("pxmitpriv->bkq_cnt=%d\n", pxmitpriv->bkq_cnt);
+os_dep/linux/usb_ops_linux.c:447:			//DBG_8192C("pxmitpriv->viq_cnt=%d\n", pxmitpriv->viq_cnt);
+os_dep/linux/usb_ops_linux.c:452:			//DBG_8192C("pxmitpriv->voq_cnt=%d\n", pxmitpriv->voq_cnt);
+os_dep/linux/usb_ops_linux.c:458:			//DBG_8192C("pxmitpriv->beq_cnt=%d\n", pxmitpriv->beq_cnt);
+os_dep/linux/usb_ops_linux.c:477:		DBG_8192C("%s(): TX Warning! bDriverStopped(%d) OR bSurpriseRemoved(%d) pxmitbuf->buf_tag(%x) \n", 
+os_dep/linux/usb_ops_linux.c:516:			DBG_8192C("bSurpriseRemoved=TRUE\n");
+os_dep/linux/usb_ops_linux.c:619:		//DBG_8192C("URB_NO_INTERRUPT ");
+os_dep/linux/usb_ops_linux.c:751:			DBG_8192C("recv_tasklet => bDriverStopped or bSurpriseRemoved \n");
+os_dep/linux/usb_ops_linux.c:777:		DBG_8192C("%s() RX Warning! bDriverStopped(%d) OR bSurpriseRemoved(%d) \n", 
+os_dep/linux/usb_ops_linux.c:806:		DBG_8192C("###=> usb_read_port_complete => urb status(%d)\n", purb->status);
+os_dep/linux/usb_ops_linux.c:837:				DBG_8192C("ERROR: URB IS IN PROGRESS!/n");
+os_dep/linux/usb_ops_linux.c:894:			DBG_8192C("cannot submit rx in-token(err = 0x%08x),urb_status = %d\n",err,purb->status);
+os_dep/linux/usb_ops_linux.c:916:			DBG_8192C("recv_tasklet => bDriverStopped or bSurpriseRemoved \n");
+os_dep/linux/usb_ops_linux.c:951:		DBG_8192C("%s() RX Warning! bDriverStopped(%d) OR bSurpriseRemoved(%d) \n", 
+os_dep/linux/usb_ops_linux.c:962:			DBG_8192C("%s()-%d: RX Warning!\n", __FUNCTION__, __LINE__);	
+os_dep/linux/usb_ops_linux.c:985:		DBG_8192C("###=> usb_read_port_complete => urb status(%d)\n", purb->status);
+os_dep/linux/usb_ops_linux.c:1016:				DBG_8192C("ERROR: URB IS IN PROGRESS!/n");
+os_dep/linux/custom_gpio_linux.c:65:		DBG_8192C("%s oob_irq:%d\n", __func__, oob_irq);
+os_dep/linux/custom_gpio_linux.c:114:			DBG_8192C("%s: call customer specific GPIO(%d) to set wifi power down pin to 0\n",
+os_dep/linux/custom_gpio_linux.c:124:			DBG_8192C("%s: callc customer specific GPIO(%d) to set wifi power down pin to 1\n",
+os_dep/linux/custom_gpio_linux.c:196:			DBG_8192C("%s: call customer specific GPIO to set wifi power down pin to 0\n",
+os_dep/linux/custom_gpio_linux.c:204:				DBG_8192C("%s: turn off VSIM2 2.8V\n", __func__);
+os_dep/linux/custom_gpio_linux.c:210:			DBG_8192C("%s: callc customer specific GPIO to set wifi power down pin to 1\n",
+os_dep/linux/custom_gpio_linux.c:213:				DBG_8192C("%s: turn on VSIM2 2.8V\n", __func__);
+os_dep/linux/custom_gpio_linux.c:226:			DBG_8192C("%s: turn off VDD-WIFI0 1.2V\n", __FUNCTION__);
+os_dep/linux/custom_gpio_linux.c:230:			DBG_8192C("%s: turn off VDD-WIFI0 3.3V\n", __FUNCTION__);
+os_dep/linux/custom_gpio_linux.c:233:			DBG_8192C("%s: call customer specific GPIO(%d) to turn off wifi power\n",
+os_dep/linux/custom_gpio_linux.c:242:			DBG_8192C("%s: call customer specific GPIO(%d) to turn on wifi power\n",
+os_dep/linux/custom_gpio_linux.c:247:			DBG_8192C("%s: turn on VDD-WIFI0 3.3V\n", __FUNCTION__);
+os_dep/linux/custom_gpio_linux.c:252:			DBG_8192C("%s: turn on VDD-WIFI1 1.2V\n", __func__);
+os_dep/linux/custom_gpio_linux.c:260:			DBG_8192C("%s: call customer specific GPIO to set bt power down pin to 0\n",
+os_dep/linux/custom_gpio_linux.c:269:			DBG_8192C("%s: callc customer specific GPIO to set bt power down pin to 1\n",
+os_dep/linux/custom_gpio_linux.c:295:		DBG_8192C("%s oob_irq:%d\n", __func__, oob_irq);
+os_dep/linux/custom_gpio_linux.c:322:	DBG_8192C("%s level=%d\n",__func__, is_high);
+os_dep/linux/wifi_regd.c:448:		DBG_8192C("%s: %s\n", __func__, "NL80211_REGDOM_SET_BY_DRIVER");
+os_dep/linux/wifi_regd.c:453:		DBG_8192C("%s: %s\n", __func__,
+os_dep/linux/wifi_regd.c:459:		DBG_8192C("%s: %s\n", __func__,
+os_dep/linux/wifi_regd.c:465:		DBG_8192C("%s: %s\n", __func__,
+os_dep/linux/wifi_regd.c:493:	DBG_8192C("%s\n", __func__);
+os_dep/linux/wifi_regd.c:570:	DBG_8192C("%s: Country alpha2 being used: %c%c\n",
+os_dep/linux/ioctl_linux.c:12631:		DBG_8192C("FirmwareDownloadBT ready = 0x%x 0x%x", pMptCtx->mptOutBuf[4],pMptCtx->mptOutBuf[5]);
+os_dep/linux/ioctl_linux.c:12704:		DBG_8192C("FirmwareDownloadBT ready = 0x%x 0x%x", pMptCtx->mptOutBuf[4],pMptCtx->mptOutBuf[5]);
+os_dep/linux/ioctl_linux.c:13397:	DBG_8192C( "[%s] %s %d\n", __FUNCTION__, extra, wrqu->data.length -1  );
+os_dep/linux/ioctl_linux.c:13497:	DBG_8192C("[%s] dump_stack:%s\n", __FUNCTION__, extra);
+os_dep/linux/ioctl_linux.c:13521:	DBG_8192C("[%s] off_ch_num:%s\n", __FUNCTION__, extra);
+os_dep/linux/ioctl_linux.c:13545:	DBG_8192C("[%s] ch_offset:%s\n", __FUNCTION__, extra);
+os_dep/linux/ioctl_linux.c:13596:	DBG_8192C( "[%s] %s %d\n", __FUNCTION__, extra, wrqu->data.length -1  );
+os_dep/linux/ioctl_linux.c:14410:		DBG_8192C("%s: ERROR! size not match tx/rx=%d/%d !\n",
+os_dep/linux/ioctl_linux.c:14418:			DBG_8192C("%s: ERROR! pkt content mismatch!\n", __func__);
+os_dep/linux/ioctl_linux.c:14424:		DBG_8192C("\n%s: TX PKT total=%d, desc=%d, content=%d\n",
+os_dep/linux/ioctl_linux.c:14426:		DBG_8192C("%s: TX DESC size=%d\n", __func__, TXDESC_SIZE);
+os_dep/linux/ioctl_linux.c:14428:		DBG_8192C("%s: TX content size=%d\n", __func__, txsz - TXDESC_SIZE);
+os_dep/linux/ioctl_linux.c:14431:		DBG_8192C("\n%s: RX PKT read=%d offset=%d(%d,%d) content=%d\n",
+os_dep/linux/ioctl_linux.c:14435:			DBG_8192C("%s: RX DESC size=%d\n", __func__, RXDESC_SIZE);
+os_dep/linux/ioctl_linux.c:14437:			DBG_8192C("%s: RX drvinfo size=%d\n", __func__, drvinfosize);
+os_dep/linux/ioctl_linux.c:14439:			DBG_8192C("%s: RX content size=%d\n", __func__, rxpktsize);
+os_dep/linux/ioctl_linux.c:14442:			DBG_8192C("%s: RX data size=%d\n", __func__, rxsz);
+os_dep/linux/ioctl_linux.c:14488:		DBG_8192C("%s: wirte port cnt=%d size=%d\n", __func__, cnt, ploopback->txsize);
+os_dep/linux/ioctl_linux.c:15284:				DBG_8192C("%s: Not yet implemented...\n", __func__);
+os_dep/linux/ioctl_linux.c:15292:			DBG_8192C("%s: The command %s needs exactly %d argument(s)...\n",
+os_dep/linux/ioctl_linux.c:15426:				DBG_8192C("%s: Not yet implemented...\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:406:	//DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:449:				DBG_8192C("ssid=%s, len=%d\n", pssid->Ssid, pssid->SsidLength);
+os_dep/linux/ioctl_cfg80211.c:532:	DBG_8192C("bssid: "MAC_FMT"\n", MAC_ARG(pnetwork->network.MacAddress));
+os_dep/linux/ioctl_cfg80211.c:533:	DBG_8192C("Channel: %d(%d)\n", channel, freq);
+os_dep/linux/ioctl_cfg80211.c:534:	DBG_8192C("Capability: %X\n", notify_capability);
+os_dep/linux/ioctl_cfg80211.c:535:	DBG_8192C("Beacon interval: %d\n", notify_interval);
+os_dep/linux/ioctl_cfg80211.c:536:	DBG_8192C("Signal: %d\n", notify_signal);
+os_dep/linux/ioctl_cfg80211.c:537:	DBG_8192C("notify_timestamp: %llu\n", notify_timestamp);
+os_dep/linux/ioctl_cfg80211.c:571:	//	DBG_8192C("%s, got p2p_ie\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:586:		DBG_8192C(FUNC_ADPT_FMT" bss NULL\n", FUNC_ADPT_ARG(padapter));
+os_dep/linux/ioctl_cfg80211.c:610:				DBG_8192C("error!, len_information_elements !=  bss->len_proberesp_ies\n");
+os_dep/linux/ioctl_cfg80211.c:781:			DBG_8192C("%s, role=%d, p2p_state=%d, pre_p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo), rtw_p2p_pre_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:848:		DBG_8192C("pwdev->sme_state(b)=%d\n", pwdev->sme_state);
+os_dep/linux/ioctl_cfg80211.c:857:		DBG_8192C("pwdev->sme_state(a)=%d\n", pwdev->sme_state);
+os_dep/linux/ioctl_cfg80211.c:891:			DBG_8192C("%s, role=%d, p2p_state=%d, pre_p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo), rtw_p2p_pre_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:898:		DBG_8192C("pwdev->sme_state(b)=%d\n", pwdev->sme_state);
+os_dep/linux/ioctl_cfg80211.c:906:			//DBG_8192C("pwdev->sme_state=%d\n", pwdev->sme_state);
+os_dep/linux/ioctl_cfg80211.c:908:		DBG_8192C("pwdev->sme_state(a)=%d\n", pwdev->sme_state);
+os_dep/linux/ioctl_cfg80211.c:932:	DBG_8192C("%s\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:961:			DBG_8192C("rtw_set_encryption(), sta has already been removed or never been added\n");
+os_dep/linux/ioctl_cfg80211.c:970:		DBG_8192C("clear default encryption keys, keyid=%d\n", param->u.crypt.idx);
+os_dep/linux/ioctl_cfg80211.c:978:		DBG_8192C("r871x_set_encryption, crypt.alg = WEP\n");
+os_dep/linux/ioctl_cfg80211.c:983:		DBG_8192C("r871x_set_encryption, wep_key_idx=%d, len=%d\n", wep_key_idx, wep_key_len);
+os_dep/linux/ioctl_cfg80211.c:1031:				DBG_8192C("%s, set group_key, WEP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1044:				DBG_8192C("%s, set group_key, TKIP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1060:				DBG_8192C("%s, set group_key, CCMP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1068:				DBG_8192C("%s, set group_key, none\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1104:					DBG_8192C("%s, set pairwise key, WEP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1114:					DBG_8192C("%s, set pairwise key, TKIP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1129:					DBG_8192C("%s, set pairwise key, CCMP\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1135:					DBG_8192C("%s, set pairwise key, none\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:1225:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:1262:		DBG_8192C("wpa_set_encryption, crypt.alg = WEP\n");
+os_dep/linux/ioctl_cfg80211.c:1306:		//DBG_8192C("%s, : dot11AuthAlgrthm == dot11AuthAlgrthm_8021X \n", __func__);
+os_dep/linux/ioctl_cfg80211.c:1313:				DBG_8192C("%s, : Obtain Sta_info fail \n", __func__);
+os_dep/linux/ioctl_cfg80211.c:1331:					DBG_8192C("%s, : param->u.crypt.set_tx ==1 \n", __func__);
+os_dep/linux/ioctl_cfg80211.c:1486:	DBG_8192C("%s, ret=%d\n", __func__, ret);
+os_dep/linux/ioctl_cfg80211.c:1625:                //DBG_8192C("@@@@@@@@@@ fw_state=0x%x, iftype=%d\n", pmlmepriv->fw_state, rtw_wdev->iftype);
+os_dep/linux/ioctl_cfg80211.c:1630:		DBG_8192C("error! fw_state=0x%x, iftype=%d\n", pmlmepriv->fw_state, rtw_wdev->iftype);
+os_dep/linux/ioctl_cfg80211.c:1806:		DBG_8192C("%s, sta_info is null\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:1961:				DBG_8192C("%s, role=%d, p2p_state=%d, pre_p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo), rtw_p2p_pre_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:2025:			DBG_8192C("error wiphy compare\n");
+os_dep/linux/ioctl_cfg80211.c:2055:		DBG_8192C("%s(): cfg80211_unlink %s!! () ",__func__,select_network.Ssid.Ssid );
+os_dep/linux/ioctl_cfg80211.c:2081:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:2134:	DBG_8192C("%s, ielen=%d\n", __func__, len);
+os_dep/linux/ioctl_cfg80211.c:2142:			DBG_8192C("probe_req_wps_ielen=%d\n", wps_ielen);
+os_dep/linux/ioctl_cfg80211.c:2155:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:2174:			DBG_8192C("probe_req_p2p_ielen=%d\n", p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:2187:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:2214:			DBG_8192C("probe_req_wfd_ielen=%d\n", wfd_ielen);
+os_dep/linux/ioctl_cfg80211.c:2227:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:2338:			DBG_8192C("%s, fwstate=0x%x\n", __func__, pmlmepriv->fw_state);
+os_dep/linux/ioctl_cfg80211.c:2342:				DBG_8192C("AP mode process WPS \n");
+os_dep/linux/ioctl_cfg80211.c:2374:				DBG_8192C("%s, role=%d, p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:2397:		DBG_8192C("%s, fwstate=0x%x\n", __func__, pmlmepriv->fw_state);
+os_dep/linux/ioctl_cfg80211.c:2401:		DBG_8192C("%s, fwstate=0x%x\n", __func__, pmlmepriv->fw_state);
+os_dep/linux/ioctl_cfg80211.c:2498:		DBG_8192C("ssid=%s, len=%d\n", ssids[i].ssid, ssids[i].ssid_len);
+os_dep/linux/ioctl_cfg80211.c:2584:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:2592:	DBG_8192C("%s, wpa_version=%d\n", __func__, wpa_version);
+os_dep/linux/ioctl_cfg80211.c:2626:	DBG_8192C("%s, nl80211_auth_type=%d\n", __func__, sme_auth_type);
+os_dep/linux/ioctl_cfg80211.c:2672:	DBG_8192C("%s, ucast=%d, cipher=0x%x\n", __func__, ucast, cipher);
+os_dep/linux/ioctl_cfg80211.c:2715:		DBG_8192C("Unsupported cipher: 0x%x\n", cipher);
+os_dep/linux/ioctl_cfg80211.c:2732:	DBG_8192C("%s, key_mgt=0x%x\n", __func__, key_mgt);
+os_dep/linux/ioctl_cfg80211.c:2751:		DBG_8192C("Invalid key mgt: 0x%x\n", key_mgt);
+os_dep/linux/ioctl_cfg80211.c:2791:		DBG_8192C("set wpa_ie(length:%zu):\n", ielen);
+os_dep/linux/ioctl_cfg80211.c:2793:			DBG_8192C("0x%.2x 0x%.2x 0x%.2x 0x%.2x 0x%.2x 0x%.2x 0x%.2x 0x%.2x \n",buf[i],buf[i+1],buf[i+2],buf[i+3],buf[i+4],buf[i+5],buf[i+6],buf[i+7]);
+os_dep/linux/ioctl_cfg80211.c:2812:			DBG_8192C("got wpa_ie, wpa_ielen:%u\n", wpa_ielen);
+os_dep/linux/ioctl_cfg80211.c:2825:			DBG_8192C("got wpa2_ie, wpa2_ielen:%u\n", wpa2_ielen);
+os_dep/linux/ioctl_cfg80211.c:2892:			DBG_8192C("got wps_ie, wps_ielen:%u\n", wps_ielen);
+os_dep/linux/ioctl_cfg80211.c:2910:			DBG_8192C("%s p2p_assoc_req_ielen=%d\n", __FUNCTION__, p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:2923:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:2941:			DBG_8192C("%s wfd_assoc_req_ielen=%d\n", __FUNCTION__, wfd_ielen);
+os_dep/linux/ioctl_cfg80211.c:2954:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:3017:		DBG_8192C("%s, but buddy_intf is under linking\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:3042:	//DBG_8192C("ssid=%s, len=%zu\n", ndis_ssid.Ssid, params->ssid_len);
+os_dep/linux/ioctl_cfg80211.c:3165:		DBG_8192C("%s, but buddy_intf is under linking\n", __FUNCTION__);
+os_dep/linux/ioctl_cfg80211.c:3190:	DBG_8192C("ssid=%s, len=%zu\n", ndis_ssid.Ssid, sme->ssid_len);
+os_dep/linux/ioctl_cfg80211.c:3194:		DBG_8192C("bssid="MAC_FMT"\n", MAC_ARG(sme->bssid));
+os_dep/linux/ioctl_cfg80211.c:3199:		DBG_8192C("%s, fw_state=0x%x, goto exit\n", __FUNCTION__, pmlmepriv->fw_state);
+os_dep/linux/ioctl_cfg80211.c:3240:	DBG_8192C("%s, ie_len=%zu\n", __func__, sme->ie_len);
+os_dep/linux/ioctl_cfg80211.c:3343:	DBG_8192C("set ssid:dot11AuthAlgrthm=%d, dot11PrivacyAlgrthm=%d, dot118021XGrpPrivacy=%d\n", psecuritypriv->dot11AuthAlgrthm, psecuritypriv->dot11PrivacyAlgrthm, psecuritypriv->dot118021XGrpPrivacy);
+os_dep/linux/ioctl_cfg80211.c:3349:	DBG_8192C("<=%s, ret %d\n",__FUNCTION__, ret);
+os_dep/linux/ioctl_cfg80211.c:3423:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:3433:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:3617:		DBG_8192C("iftype=%d before call cfg80211_send_rx_assoc()\n", pwdev->iftype);
+os_dep/linux/ioctl_cfg80211.c:3619:		DBG_8192C("iftype=%d after call cfg80211_send_rx_assoc()\n", pwdev->iftype);
+os_dep/linux/ioctl_cfg80211.c:3687:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:3696:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:3734:		DBG_8192C("radiotap len (should be 14): %d\n", rtap_len);
+os_dep/linux/ioctl_cfg80211.c:3764:		DBG_8192C("should be eapol packet\n");
+os_dep/linux/ioctl_cfg80211.c:3791:			DBG_8192C(FUNC_NDEV_FMT" frame_control:0x%x\n", FUNC_NDEV_ARG(ndev),
+os_dep/linux/ioctl_cfg80211.c:3796:		DBG_8192C("RTW_Tx:da="MAC_FMT" via "FUNC_NDEV_FMT"\n",
+os_dep/linux/ioctl_cfg80211.c:3853:		DBG_8192C("frame_ctl=0x%x\n", frame_ctl & (RTW_IEEE80211_FCTL_FTYPE|RTW_IEEE80211_FCTL_STYPE));
+os_dep/linux/ioctl_cfg80211.c:3867:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:3874:	DBG_8192C("%s\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:4083:	DBG_8192C("%s beacon_head_len=%zu, beacon_tail_len=%zu\n", __FUNCTION__, head_len, tail_len);
+os_dep/linux/ioctl_cfg80211.c:4111:		DBG_8192C("add bcn, wps_ielen=%d\n", wps_ielen);
+os_dep/linux/ioctl_cfg80211.c:4122:			DBG_8192C("got p2p_ie, len=%d\n", p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:4128:				DBG_8192C("Enable P2P function for the first time\n");
+os_dep/linux/ioctl_cfg80211.c:4136:				DBG_8192C("enter GO Mode, p2p_ielen=%d\n", p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:4320:		DBG_8192C("%s, fw_state != FW_LINKED|WIFI_AP_STATE\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:4327:		DBG_8192C("flush all sta, and cam_entry\n");
+os_dep/linux/ioctl_cfg80211.c:4337:	DBG_8192C("free sta macaddr =" MAC_FMT "\n", MAC_ARG(mac));
+os_dep/linux/ioctl_cfg80211.c:4363:				DBG_8192C("%s, sta's dot8021xalg = 1 and key_installed = _FALSE\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:4367:				DBG_8192C("free psta=%p, aid=%d\n", psta, psta->aid);
+os_dep/linux/ioctl_cfg80211.c:4467:	DBG_8192C("use_cts_prot=%d\n", params->use_cts_prot);
+os_dep/linux/ioctl_cfg80211.c:4468:	DBG_8192C("use_short_preamble=%d\n", params->use_short_preamble);
+os_dep/linux/ioctl_cfg80211.c:4469:	DBG_8192C("use_short_slot_time=%d\n", params->use_short_slot_time);
+os_dep/linux/ioctl_cfg80211.c:4470:	DBG_8192C("ap_isolate=%d\n", params->ap_isolate);
+os_dep/linux/ioctl_cfg80211.c:4472:	DBG_8192C("basic_rates_len=%d\n", params->basic_rates_len);
+os_dep/linux/ioctl_cfg80211.c:4475:		DBG_8192C("basic_rates=%d\n", params->basic_rates[i]);
+os_dep/linux/ioctl_cfg80211.c:4550:	DBG_8192C("RTW_Rx:cur_ch=%d\n", channel);
+os_dep/linux/ioctl_cfg80211.c:4582:	DBG_8192C("RTW_Rx:cur_ch=%d\n", channel);
+os_dep/linux/ioctl_cfg80211.c:4644:	DBG_8192C("RTW_Rx:cur_ch=%d\n", channel);
+os_dep/linux/ioctl_cfg80211.c:4867:		DBG_8192C("%s, ack to\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:4871:	//	DBG_8192C("waiting for p2p peer key-in PIN CODE\n");
+os_dep/linux/ioctl_cfg80211.c:4926:		DBG_8192C("%s, cancel ro ch timer\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:4978:		DBG_8192C("%s, role=%d, p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:5016:						DBG_8192C("%s, issue nulldata pwrbit=1\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5023:					DBG_8192C("%s, set switch ch timer, duration=%d\n", __func__, duration-pwdinfo->ext_listen_interval);
+os_dep/linux/ioctl_cfg80211.c:5071:		DBG_8192C("%s, set ro ch timer, duration=%d\n", __func__, duration);
+os_dep/linux/ioctl_cfg80211.c:5119:		DBG_8192C("%s, cancel ro ch timer\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5142:		DBG_8192C("%s, role=%d, p2p_state=%d\n", __func__, rtw_p2p_role(pwdinfo), rtw_p2p_state(pwdinfo));
+os_dep/linux/ioctl_cfg80211.c:5181:		//DBG_8192C("%s, cancel ro ch timer\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5187:			DBG_8192C("%s, extend ro ch time\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5207:					DBG_8192C("%s, issue nulldata pwrbit=1\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5213:				//DBG_8192C("%s, set switch ch timer, period=%d\n", __func__, pwdinfo->ext_listen_period);
+os_dep/linux/ioctl_cfg80211.c:5226:			DBG_8192C("%s, set switch ch timer, period=%d\n", __func__, ext_listen_period);
+os_dep/linux/ioctl_cfg80211.c:5292:		DBG_8192C("%s, ack == _FAIL\n", __func__);
+os_dep/linux/ioctl_cfg80211.c:5302:		DBG_8192C("%s, ack=%d, ok!\n", __func__, ack);
+os_dep/linux/ioctl_cfg80211.c:5310:	DBG_8192C("%s, ret=%d\n", __func__, ret);
+os_dep/linux/ioctl_cfg80211.c:5411:		DBG_8192C(FUNC_ADPT_FMT" frame_control:0x%x\n", FUNC_ADPT_ARG(padapter),
+os_dep/linux/ioctl_cfg80211.c:5416:	DBG_8192C("RTW_Tx:tx_ch=%d, da="MAC_FMT"\n", tx_ch, MAC_ARG(GetAddr1Ptr(buf)));
+os_dep/linux/ioctl_cfg80211.c:5735:			DBG_8192C("bcn_wps_ielen=%d\n", wps_ielen);
+os_dep/linux/ioctl_cfg80211.c:5748:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5767:			DBG_8192C("bcn_p2p_ielen=%d\n", p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:5780:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5798:			DBG_8192C("bcn_wfd_ielen=%d\n", wfd_ielen);
+os_dep/linux/ioctl_cfg80211.c:5811:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5840:	DBG_8192C("%s, ielen=%d\n", __func__, len);
+os_dep/linux/ioctl_cfg80211.c:5851:			DBG_8192C("probe_resp_wps_ielen=%d\n", wps_ielen);
+os_dep/linux/ioctl_cfg80211.c:5865:					DBG_8192C("GO mode process WPS under site-survey,  sr no set\n");
+os_dep/linux/ioctl_cfg80211.c:5880:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5923:			DBG_8192C("probe_resp_p2p_ielen=%d\n", p2p_ielen);
+os_dep/linux/ioctl_cfg80211.c:5930:				//DBG_8192C( "[%s] Got P2P Capability Attr!!\n", __FUNCTION__ );
+os_dep/linux/ioctl_cfg80211.c:5937:					DBG_8192C("Got P2P Capability Attr, grp_cap=0x%x, is_GO\n", grp_cap);
+os_dep/linux/ioctl_cfg80211.c:5953:					DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5972:					DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:5990:			DBG_8192C("probe_resp_wfd_ielen=%d\n", wfd_ielen);
+os_dep/linux/ioctl_cfg80211.c:6003:				DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:6023:	DBG_8192C("%s, ielen=%d\n", __func__, len);
+os_dep/linux/ioctl_cfg80211.c:6037:			DBG_8192C("%s()-%d: rtw_malloc() ERROR!\n", __FUNCTION__, __LINE__);
+os_dep/linux/ioctl_cfg80211.c:6057:	DBG_8192C("%s, ielen=%d\n", __func__, len);
+os_dep/linux/ioctl_cfg80211.c:6138:		DBG_8192C("%s, error rf_type=%d\n", __func__, rf_type);
+os_dep/linux/ioctl_cfg80211.c:6152:	DBG_8192C("%s:rf_type=%d\n", __func__, rf_type);
+os_dep/linux/ioctl_cfg80211.c:6379:	DBG_8192C("%s(padapter=%p)\n", __func__, padapter);
+os_dep/linux/ioctl_cfg80211.c:6384:		DBG_8192C("Couldn't allocate wiphy device\n");
+os_dep/linux/ioctl_cfg80211.c:6394:		DBG_8192C("Couldn't register wiphy device\n");
+os_dep/linux/ioctl_cfg80211.c:6401:		DBG_8192C("Couldn't allocate wireless device\n");
+os_dep/linux/ioctl_cfg80211.c:6455:	DBG_8192C("%s(wdev=%p)\n", __func__, wdev);
+os_dep/linux/ioctl_cfg80211.c:6474:	DBG_8192C("%s(wdev=%p)\n", __func__, wdev);
+os_dep/linux/ioctl_cfg80211.c:6488:		DBG_8192C("%s, unregister monitor interface\n", __func__);
+platform/platform_ARM_SUNxI_usb.c:61:			DBG_8192C("ERR: script_parser_fetch usb_wifi_usbc_num failed\n");
+platform/platform_ARM_SUNxI_usb.c:65:		DBG_8192C("sw_usb_enable_hcd: usbc_num = %d\n", usb_wifi_host);
+platform/platform_ARM_SUNxI_usb.c:122:	DBG_8192C("sw_usb_disable_hcd: usbc_num = %d\n", usb_wifi_host);
