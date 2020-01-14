@@ -46,7 +46,7 @@
 	};
 
 	chosen {
-		stdout-path = &uart1;
+		stdout-path = &uart4;
 	};
 
 #if 0/* remove by cym 20181119 */
@@ -1002,7 +1002,7 @@
 				MX6QDL_PAD_DISP0_DAT23__IPU1_DISP0_DATA23  0x10
 			>;
 		};
-
+#if 0
 		pinctrl_ipu1_2: ipu1grp-2 { /* parallel camera */
 			fsl,pins = <
 				MX6QDL_PAD_CSI0_DAT12__IPU1_CSI0_DATA12    0x80000000
@@ -1021,7 +1021,7 @@
 				MX6QDL_PAD_SD1_DAT0__GPIO1_IO16            0x80000000
 			>;
 		};
-
+#endif
 		pinctrl_pcie: pciegrp {
 			fsl,pins = <
 				/*MX6QDL_PAD_GPIO_17__GPIO7_IO12	0x1b0b0*/
